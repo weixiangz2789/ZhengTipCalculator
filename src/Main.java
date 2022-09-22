@@ -27,11 +27,13 @@ public class Main {
             System.out.print("Enter a cost in dollars and cents, e.g. 12.50 (-1 to end): ");
             //Scan user input and stores it into variable input
             input = scan.nextDouble();
+            //if the user inputs any value other than -1, add the value of input to cost
             if (input != -1){
                 cost += input;
             }
             scan.nextLine();
         }
+        //prints everything and formats the numbers into decimals
         System.out.println("-------------------------------");
         System.out.println("Total bill before tip: " + (formatter.format(cost)));
         System.out.println("Total percentage: " + percent);
