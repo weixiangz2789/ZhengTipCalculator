@@ -35,13 +35,13 @@ public class Main {
         }
         //prints everything and formats the numbers into decimals
         System.out.println("-------------------------------");
-        System.out.println("Total bill before tip: " + (formatter.format(cost)));
-        System.out.println("Total percentage: " + percent);
-        System.out.println("Total tip: " + (formatter.format(cost*percent/100)));
-        System.out.println("Total Bill with tip: " + (formatter.format(cost + (cost*percent/100))));
-        System.out.println("Per person cost before tip: " + (formatter.format(cost/people)));
-        System.out.println("Tip per person: " + (formatter.format(cost*percent/100/people)));
-        System.out.println("Total cost per person: " + (formatter.format((cost*percent/100/people)+(cost/people))));
+        System.out.println("Total bill before tip: $" + (formatter.format(cost)));
+        System.out.println("Total percentage: " + percent + "%");
+        System.out.println("Total tip: $" + (formatter.format(cost*percent/100)));
+        System.out.println("Total Bill with tip: $" + (formatter.format(cost + (cost*percent/100))));
+        System.out.println("Per person cost before tip: $" + (formatter.format(cost/people)));
+        System.out.println("Tip per person: $" + (formatter.format(cost*percent/100/people)));
+        System.out.println("Total cost per person: $" + (formatter.format((cost*percent/100/people)+(cost/people))));
 
     }
 
