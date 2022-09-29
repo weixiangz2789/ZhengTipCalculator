@@ -23,7 +23,7 @@ public class Main {
         double input = 0;
 
         //While loop used to continuously ask the user for a cost until they enter in -1
-        while (input != -1.0) {
+        while (input != -1) {
             System.out.print("Enter a cost in dollars and cents, e.g. 12.50 (-1 to end): ");
             //Scan user input and stores it into variable input
             input = scan.nextDouble();
